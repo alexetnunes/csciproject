@@ -41,6 +41,7 @@ output=ciphera.decode(prepInput);
 }
 return output;
 }
+
 private char whatCipher(){
    double b=0;
    int h=0;

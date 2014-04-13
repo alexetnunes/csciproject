@@ -147,10 +147,10 @@ resetButton.setBackground(Color.PINK);
     if (e.getSource() == this.encryptButton)
     {
       text=cryptField.getText();
-      temp = text;
-      en.encodeThis(temp);
-      temp=en.getEncodedI();
-      dcryptField.setText(temp);
+      
+      en.encodeThis(text);
+      encoded=en.getEncodedInput();
+      dcryptField.setText(encoded.toString());
       cryptField.setText("");
      // this.encryptButton.setVisible(false);
       //this.decryptButton.setVisible(true);
@@ -158,10 +158,10 @@ resetButton.setBackground(Color.PINK);
     if (e.getSource() == this.decryptButton)
     {
     	temp=dcryptField.getText();
-      encoded=en.getEncodedInput();
+ //     encoded=en.getEncodedInput();
   
       
-      newtext=dc.decodeThis(encoded.toString());
+     newtext=dc.decodeThis(temp);
      
    
       

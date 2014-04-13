@@ -8,6 +8,7 @@ char [] a=hold.toCharArray();
 int b=0;
 for(int i=0;i<a.length;i++){
 b+=(int)a[i];
+System.out.print(b);
 }
 double x=b;
 b=(int)(x/8.0)-10;

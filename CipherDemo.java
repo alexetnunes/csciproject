@@ -4,7 +4,7 @@ public static void main(String[] args){
    Scanner sc=new Scanner(System.in);
    System.out.print("Please enter a String: ");
    String input=sc.nextLine();
-   Encode test=new Encode(input);
+  Encode test=new Encode(input);
    ArrayList encoded=new ArrayList<String>();
    encoded=test.getEncodedInput();
    System.out.println("Your encoded String: "+encoded.toString());
