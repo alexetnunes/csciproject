@@ -7,6 +7,13 @@ public Encode(String input){
    this.input=input;
    encodedInput=sendToCipher();
 }
+
+//mutator method
+public void encodeThis(String d){
+	input=d;
+	encodedInput=sendToCipher();
+}
+
 private ArrayList<String> sendToCipher(){
    ACipher a1=new ACipher();
    BCipher b1=new BCipher();
@@ -17,8 +24,8 @@ private ArrayList<String> sendToCipher(){
    Random rand=new Random();
    int ciph=rand.nextInt(3);
    //temporary
-   ciph=1;
    //remove the line above when complete
+   ciph=2;
    if(ciph==0){
       a1.setInput(input);
       export=a1.compute();

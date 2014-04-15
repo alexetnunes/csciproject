@@ -43,8 +43,9 @@ else if(cipher==('B')){
 BCipher cipherb=new BCipher();
 output=cipherb.decode(prepInput);
 }
-else if(cipher=='C'){
+else if(cipher==('C')){
 CCipher cipherc=new CCipher();
+output=cipherc.decode(prepInput);
 }
 return output;
 }
