@@ -39,9 +39,15 @@ if(cipher==('A')){
 ACipher ciphera=new ACipher();
 output=ciphera.decode(prepInput);
 }
+else if(cipher==('B')){
+BCipher cipherb=new BCipher();
+output=cipherb.decode(prepInput);
+}
+else if(cipher=='C'){
+CCipher cipherc=new CCipher();
+}
 return output;
 }
-
 private char whatCipher(){
    double b=0;
    int h=0;
@@ -52,10 +58,16 @@ private char whatCipher(){
       for(int i=0;i<a.length;i++){
          b+=a[i];
       }
+      if((int)(b/8.0-10)==(int) 'A'){
       h=(int)(b/8.0-10);
-      
+      }
+      else if((int)(b/10+8)==(int) 'B'){
+      h=(int)(b/10+8);
+      }
+      else if((int)(b/6-25)==(int) 'C'){
+      h=(int)(b/6-25);
+      }
    }
    return (char) h;
-   
 }
 }
