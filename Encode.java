@@ -23,9 +23,7 @@ private ArrayList<String> sendToCipher(){
    ArrayList<String> export=new ArrayList<String>();
    Random rand=new Random();
    int ciph=rand.nextInt(3);
-   //temporary
-   //remove the line above when complete
-   ciph=2;
+
    if(ciph==0){
       a1.setInput(input);
       export=a1.compute();
